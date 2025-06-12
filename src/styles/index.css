@@ -1,11 +1,31 @@
-/* 
-
-    You can write your own styles here...
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+/* Alineamos los dijitos en el medio*/
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 500px; 
+    margin: 0;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
-*/
+}
+/* Creamos un contenedor negro para almacenar los numeros y el icono*/
+.container{
+    text-align: center;
+    background: black;
+    width: 500px;
+    height: auto; 
+    margin: auto; 
+    padding: 10px;
+    border-radius: 10px;
+}
+/*Hacemos que los numeros se organicen de Izquierda a derecha en posicion horizontal y los decoramos*/
+.container div{
+    display:inline-flex;
+    font-size: 60px;
+    line-height: 60px;
+    background: #474747;
+    color: white;
+    padding: 15px;
+    margin: 8px;
+    border-radius: 10px;
+}
